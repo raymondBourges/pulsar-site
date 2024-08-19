@@ -136,6 +136,26 @@ To configure basic authentication when using Pulsar clients, you can follow the 
       client = Client("pulsar://broker.example.com:6650", authentication=AuthenticationBasic("admin", "123456"))
    ```
 
+
+  </TabItem>
+  <TabItem value="Node.js">
+  
+  ```javascript
+  const Pulsar = require('pulsar-client');
+  
+  (async () => {
+    const auth = new Pulsar.AuthenticationBasic({
+      username: 'admin',
+      password: '123456',
+    });
+  
+    const client = new Pulsar.Client({
+      serviceUrl: 'pulsar+ssl://broker.example.com:6651/',
+      authentication: auth
+    });
+  })();
+  ```
+
   </TabItem>
   <TabItem value="Go">
 
