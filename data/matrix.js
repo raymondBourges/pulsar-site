@@ -92,7 +92,7 @@ module.exports = {
           "C++": 2,
           Go: 2,
           Python: 2,
-          Nodejs: 0,
+          Nodejs: 2,
           "C#/DotPulsar": 0,
           Websocket: 0,
           REST: 0,
